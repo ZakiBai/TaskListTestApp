@@ -7,7 +7,10 @@
 
 import UIKit
 
-class TaskListViewController: UIViewController {
+final class TaskListViewController: UIViewController {
+    private let cellID = "cell"
+
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
