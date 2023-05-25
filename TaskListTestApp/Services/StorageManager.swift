@@ -5,7 +5,6 @@
 //  Created by Zaki on 24.05.2023.
 //
 
-import Foundation
 import CoreData
 
 final class StorageManager {
@@ -29,9 +28,33 @@ final class StorageManager {
     }
     
     // MARK: - CRUD
-   
+    func create(_ taskName: String, completion: (Task) -> Void) {
+        let task = Task(context: viewContext)
+        task.title = taskName
+        completion(task)
+        saveContext()
+    }
+
+    func fetchData(completion: (Result<[Task], Error>) -> Void) {
+        let fetchRequest = Task.fetchRequest()
+
+        do {
+            let tasks = try viewContext.fetch(fetchRequest)
+            completion(.success(tasks))
+        } catch let error {
+            completion(.failure(error))
+        }
+    }
     
+    func update(_ task: Task, newName: String) {
+        task.title = newName
+        saveContext()
+    }
     
+    func delete(_ task: Task) {
+        viewContext.delete(task)
+        saveContext()
+    }
     
     
     // MARK: - Core Data Saving support

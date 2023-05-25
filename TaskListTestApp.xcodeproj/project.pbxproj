@@ -14,6 +14,7 @@
 		35AB6BC32A1DE80A0068A775 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35AB6BC22A1DE80A0068A775 /* Assets.xcassets */; };
 		35AB6BC62A1DE80A0068A775 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35AB6BC42A1DE80A0068A775 /* LaunchScreen.storyboard */; };
 		35AB6BD22A1DF2CF0068A775 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB6BD12A1DF2CF0068A775 /* StorageManager.swift */; };
+		35AB6BD52A1FE4330068A775 /* AlertControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB6BD42A1FE4330068A775 /* AlertControllerFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		35AB6BC52A1DE80A0068A775 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35AB6BC72A1DE80A0068A775 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35AB6BD12A1DF2CF0068A775 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		35AB6BD42A1FE4330068A775 /* AlertControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertControllerFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				35AB6BCD2A1DED3A0068A775 /* Storyboards */,
 				35AB6BD02A1DF1E10068A775 /* Models */,
 				35AB6BD32A1DF2D40068A775 /* Services */,
+				35AB6BD62A1FE43A0068A775 /* Factories */,
 			);
 			path = TaskListTestApp;
 			sourceTree = "<group>";
@@ -108,6 +111,14 @@
 				35AB6BD12A1DF2CF0068A775 /* StorageManager.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		35AB6BD62A1FE43A0068A775 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				35AB6BD42A1FE4330068A775 /* AlertControllerFactory.swift */,
+			);
+			path = Factories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +194,7 @@
 				35AB6BC12A1DE8070068A775 /* TaskListTestApp.xcdatamodeld in Sources */,
 				35AB6BBB2A1DE8070068A775 /* TaskListViewController.swift in Sources */,
 				35AB6BD22A1DF2CF0068A775 /* StorageManager.swift in Sources */,
+				35AB6BD52A1FE4330068A775 /* AlertControllerFactory.swift in Sources */,
 				35AB6BB72A1DE8070068A775 /* AppDelegate.swift in Sources */,
 				35AB6BB92A1DE8070068A775 /* SceneDelegate.swift in Sources */,
 			);
@@ -328,6 +340,7 @@
 				INFOPLIST_FILE = TaskListTestApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +371,7 @@
 				INFOPLIST_FILE = TaskListTestApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
